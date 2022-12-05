@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <style>
+    * {box-sizing: border-box;}
+    
+    body {
+      margin: 8%;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("https://img.freepik.com/free-vector/realistic-spring-background_23-2149266013.jpg?w=740&t=st=1670158379~exp=1670158979~hmac=6372660b1889e8c2c1370dee9192a2f8a03ceee84077751b73ade20bcee8ca5f");
+      background-size: cover;
+      
+    }
+    .heading{
+        font-family: "Sofia", sans-serif;
+        font-size: 55px;
+    }
+    
+    .topnav {
+      overflow: hidden;
+      background-color: #e9e9e9;
+      font-family: "Sofia", sans-serif;
+    }
+    
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #086c22;
+      color: white;
+    }
+    
+    .topnav .search-container {
+      float: right;
+    }
+    
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+    
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+    
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+      .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+      .topnav input[type=text] {
+        border: 1px solid #ccc;  
+      }
+
+      .plantlist{
+        font-family: "sans-serif";
+        margin-left: 15%;
+        margin-right: 15%;
+      }
+      .second{
+        margin-left: 15%;
+        direction: rtl;
+      }
+    }
+    </style>
+    </head>
+    <body>
+        <form action="/homepagesubmit" method="GET">
+        <div>
+            <b class="font-effect-shadow-multiple"><center><h1  class="heading" >Welcome to Aushadi</h1></center></b>
+        </div>
+        <div class="topnav">
+        <!--<a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>-->
+        Enter the plant name as mentioned below
+        <div class="search-container">
+              <input type="text" placeholder="Search.." name="searchitem">
+              <button type="submit">Submit</button>
+        </div>
+        </div>
+        
+        <div style="padding-left:16px" class = "plantlist">
+        <center><h3><b>List of the various Medicinal plants:</b></h3><br></center>
+        <ol><b><i>
+          <div style="float:left;margin-left:10%;">
+            <li>Tulasi</li>
+            <li>Aloevera</li>
+            <li>Basil</li>
+            <li>Calendula</li>
+            <li>Lavender</li>
+            <li>Fenugreek</li>
+            <li>Peppermint</li>
+            <li>Lemonbalm</li>
+            <li>Ashwagandha</li>
+            <li>GermanChamomile</li></b></ol>
+          </div>
+          <div style="float:right; margin-right:10%;">
+            <ol start="11" class="second"><b>
+              <li>Amla</li>
+              <li>Lemongrass</li>
+              <li>Bryophyllum</li>
+              <li>Marshamallow</li>
+              <li>Chineseyum</li>
+              <li>Coriander</li>
+              <li>Ginger</li>
+              <li>Turmeric</li>
+              <li>Garlic</li>
+              <li>Henna</li>
+        </b></ol></div></i>
+    
+        </div>
+    </form>  
+</body>    
+</html>
